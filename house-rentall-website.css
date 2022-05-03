@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(house\ rental\ website/banner.png);
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+}
+
+img.logo {
+  width: 140px;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px 30px;
+}
+
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #202020;
+}
+
+.register-btn {
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 20px;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+div.container {
+  padding: 0px 7%;
+}
+
+.container h1 {
+  font-size: 4vw;
+  font-weight: 400;
+  color: #202020;
+  text-align: center;
+  padding-top: 22%;
+}
+
+.search-bar {
+  background: #ffffff;
+  width: 70%;
+  margin: 30px auto;
+  padding: 6px 10px 6px 30px;
+  border-radius: 50px;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-bar form input {
+  display: block;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.search-bar form button {
+  background: #ff5361;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-bar form button img {
+  width: 15px;
+  margin-top: 7px;
+}
+
+.location-input {
+  flex: 1;
+}
+
+.search-bar form label {
+  font-weight: 600;
+}
+
+/* ----------EXCLUSIVES---------- */
+
+h2.sub-title {
+  margin: 50px 0 20px;
+  font-size: 2.2vw;
+  font-weight: 500;
+  color: #333;
+}
+
+div.exclusives {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
+.exclusives div img {
+  width: 100%;
+  border-radius: 10px;
+}
