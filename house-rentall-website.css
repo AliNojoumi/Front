@@ -8,7 +8,7 @@
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: url(house\ rental\ website/banner.png);
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(house\ rental\ website/banner.png);
   background-position: center;
   background-size: cover;
 }
@@ -35,14 +35,14 @@ ul li {
 a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  color: #202020;
+  color: whitesmoke;
 }
 
 .register-btn {
-  background-color: #ffffff;
-  color: #000;
+  background-color: whitesmoke;
+  color: #020202;
   border-radius: 20px;
-  padding: 8px 20px;
+  padding: 10px 25px;
   text-decoration: none;
   font-size: 14px;
 }
@@ -54,7 +54,7 @@ div.container {
 .container h1 {
   font-size: 4vw;
   font-weight: 400;
-  color: #202020;
+  color: whitesmoke;
   text-align: center;
   padding-top: 22%;
 }
@@ -121,4 +121,36 @@ div.exclusives {
 .exclusives div img {
   width: 100%;
   border-radius: 10px;
+}
+
+.exclusives div {
+  position: relative;
+}
+
+.exclusives div span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #f4f4f4;
+}
+
+/* ---------- Trending Places ---------- */
+
+div.trendig {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.trendig div img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.trendig h3 {
+  font-weight: 600;
+  margin-top: 10px;
 }
