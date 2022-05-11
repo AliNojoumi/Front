@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="house-rentall-website.css" />
+    <!-- <script src="https://kit.fontawesome.com/717f314c4d.js" crossorigin="anonymous"></script> -->
     <title>staybnb</title>
   </head>
   <body>
     <div class="header">
-      <nav>
+      <nav id="navBar">
         <img src="house rental website/logo.png" alt="logo" class="logo" />
         <ul class="nav-linksk">
-          <li><a href="#">Popular Places</a></li>
+          <li><a href="#" class="active">Popular Places</a></li>
           <li><a href="#">Travel Outside</a></li>
           <li><a href="#">Online Packages</a></li>
         </ul>
         <a href="#" class="register-btn">Register Now</a>
-      </nav>
+        <i class="fa-solid fa-bars"></i>
+            </nav>
       <div class="container">
         <h1>Find Your Next Stay</h1>
         <div class="search-bar">
@@ -132,10 +134,57 @@
         </div>
       </div>
       <div class="cta">
-        <h3>Sharing is Earning Now</h3>
-        <p>Great opportunity to make money by renting your extra space.</p>
+        <h3>
+          Sharing <br />
+          is Earning Now
+        </h3>
+        <p>Great opportunity to make money by renting <br />your extra space.</p>
         <a href="#" class="cta-btn">Know More</a>
       </div>
-    </div>
+      <h2 class="sub-title">Travellers Stories</h2>
+      <div class="stories">
+        <div>
+          <img src="house rental website/story-1.png" alt="image" />
+          <p>Popular European countries with a budget of just $10,000</p>
+        </div>
+        <div class="stories">
+          <div>
+            <img src="house rental website/story-2.png" alt="image" />
+            <p>Popular European countries with a budget of just $10,000</p>
+          </div>
+        </div>
+        <div class="stories">
+          <div>
+            <img src="house rental website/story-3.png" alt="image" />
+            <p>Popular European countries with a budget of just $10,000</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="start-btn">Start making money</a>
+      <div class="about-msg">
+        <h2>About Staybnb</h2>
+        <p>Contrary to popular belief, Lorem Ispam is not simply random text. It has roots
+          in a piece of classical Latin literature from 45 BC, making it over 2000 years
+          old. Richard McClintok, a Latin professor at Hampden-sydney College in Virginia,
+          looked up one of the more obscure Latin words, consectetur, from a Lorem Ispam
+          passage, and going through the cities of the word in classical literature,
+          discovered the undoubtable source.
+        </p>
+      </div>
+      <div class="footer">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <hr>
+        <p>Copyright</p>
+      </div>
+      <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn(){
+          navBar.classList.toggle("hidemenu")
+        }
+      </script>
   </body>
 </html>
